@@ -2,130 +2,115 @@
 <html>
 <head>
 	<title>Project 1</title>
-	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/ownstyle.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link href="http://fonts.googleapis.com/css?family=Lato:100,400" rel="stylesheet" type="text/css">
 	<meta charset="utf-8">
 	<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
-
-	 <style>
-	    @import url(http://weloveiconfonts.com/api/?family=zocial);
-
-	    /* zocial */
-	    [class*="zocial-"]:before {
-	      font-family: 'zocial', sans-serif;
-	      text-shadow: 3px 3px 3px;
-	      margin-right: 1em;
-	    }
-
-	</style>
-
 </head>
 <body>
-	<div class="row wrap">
-		<div class="col-sm-3">
-			<img class="img-responsive logosmall" src="images/logo.jpg" alt="logo">
+	<div class="container">
+		<div class="row wrap">
+			<div class="col-3">
+				<img class="img-responsive logosmall" src="images/logo.jpg" alt="logo">
+			</div>
+			<div class="col-9 text-right text-uppercase">
+				<h1 class="text-thin">Steve Huang</h1>
+				<h3 class="front">Front-End Ninja</h3>
+			</div>
 		</div>
-		<div class="col-sm-9 text-right text-uppercase">
-			<h1 class="text-thin">Steve Huang</h1>
-			<h3>Front-End Ninja</h3>
+		<hr>
+		<div class="row">
+			<div class="col-md-12">
+				<div class="figure" >
+					<img class="img-responsive" src="images/lion.jpg" sizes="(max-width: 800px) 800w, 1100w" srcset="images/lion-small.jpg 800w, images/lion-medium.jpg 1100w" alt="lion">
+				</div>
+			</div>
 		</div>
-	</div>
-	<hr>
-	<div class="row">
-		<div class="col-md-12">
-			<div class="figure" >
-				<img class="img-responsive" src="images/lion.jpg" srcset="images/lion-small.jpg 800w, images/lion-medium.jpg 1100w" alt="lion">
+		<div class="row">
+			<div class="col-md-12">
+				<h2>Featured Work</h2>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-4 text-center">
+				<img class="img-responsive" src="images/nova.jpg" alt="Resume" data-toggle="modal" data-target="#Resume">
+				<h3>Resume</h3>
+				<a href="https://github.com/arimpact">https://github.com/arimpact</a>
+			</div>
+			<div class="col-sm-4 text-center">
+				<img class="img-responsive" src="images/nova.jpg" alt="Game" data-toggle="modal" data-target="#Game">
+				<h3>Game</h3>
+				<a href="https://github.com/arimpact">https://github.com/arimpact</a>
+			</div>
+			<div class="col-sm-4 text-center">
+				<img class="img-responsive"  src="images/nova.jpg" alt="Web" data-toggle="modal" data-target="#Web">
+				<h3>Web</h3>
+				<a href="https://github.com/arimpact" class="test">https://github.com/arimpact</a>
+			</div>
+		</div>
+		<footer>
+			<a href="https://www.facebook.com/steve.huang.5095" class="zocial-facebook">Facebook</a>
+			<a href="" class="zocial-google">Google</a>
+			<a href="" class="zocial-digg">Digg</a>
+			<a href="" class="zocial-twitter">Twitter</a>
+		</footer>
+
+		<div class="modal fade" id="Resume" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<h4 class="modal-title" id="myModalLabel">Resume Zoom!</h4>
+					</div>
+					<div class="modal-body">
+						<img class="img-responsive" src="images/nova.jpg" alt="resume">
+						<p>and stuff...</p>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="modal fade" id="Game" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2" aria-hidden="true">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<h4 class="modal-title" id="myModalLabel2">Gamer</h4>
+					</div>
+					<div class="modal-body">
+						<img class="img-responsive" src="images/nova.jpg" alt="game">
+						<p>and stuff...</p>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="modal fade" id="Web" tabindex="-1" role="dialog" aria-labelledby="myModalLabel3" aria-hidden="true">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<h4 class="modal-title" id="myModalLabel3">Fun Stuff</h4>
+					</div>
+					<div class="modal-body">
+						<img class="img-responsive" src="images/nova.jpg" alt="fun">
+						<p>and stuff...</p>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
-	<div class="row">
-		<div class="col-md-12">
-			<h2>Featured Work</h2>
-		</div>
-	</div>
-	<div class="row">
-		<div class="col-sm-4 text-center">
-			<img class="img-responsive" src="images/nova.jpg" alt="Resume" data-toggle="modal" data-target="#Resume">
-			<h3>Resume</h3>
-			<a href="https://github.com/arimpact">https://github.com/arimpact</a>
-		</div>
-		<div class="col-sm-4 text-center">
-			<img class="img-responsive" src="images/nova.jpg" alt="Game" data-toggle="modal" data-target="#Game">
-			<h3>Game</h3>
-			<a href="https://github.com/arimpact">https://github.com/arimpact</a>
-		</div>
-		<div class="col-sm-4 text-center">
-			<img class="img-responsive"  src="images/nova.jpg" alt="Web" data-toggle="modal" data-target="#Web">
-			<h3>Web</h3>
-			<a href="https://github.com/arimpact" class="test">https://github.com/arimpact</a>
-		</div>
-	</div>
-	<footer>
-		<a href="https://www.facebook.com/steve.huang.5095" class="zocial-facebook">Facebook</a>
-		<a href="" class="zocial-google">Google</a>
-		<a href="" class="zocial-digg">Digg</a>
-		<a href="" class="zocial-twitter">Twitter</a>
-	</footer>
-
-	<div class="modal fade" id="Resume" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-	  <div class="modal-dialog" role="document">
-	    <div class="modal-content">
-	      <div class="modal-header">
-	        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-	        <h4 class="modal-title" id="myModalLabel">Resume Zoom!</h4>
-	      </div>
-	      <div class="modal-body">
-	        <img class="img-responsive" src="images/nova.jpg" alt="resume">
-	        <p>and stuff...</p>
-	      </div>
-	      <div class="modal-footer">
-	        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-	      </div>
-	    </div>
-	  </div>
-	</div>
-
-	<div class="modal fade" id="Game" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2" aria-hidden="true">
-	  <div class="modal-dialog" role="document">
-	    <div class="modal-content">
-	      <div class="modal-header">
-	        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-	        <h4 class="modal-title" id="myModalLabel2">Gamer</h4>
-	      </div>
-	      <div class="modal-body">
-	        <img class="img-responsive" src="images/nova.jpg" alt="game">
-	        <p>and stuff...</p>
-	      </div>
-	      <div class="modal-footer">
-	        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-	      </div>
-	    </div>
-	  </div>
-	</div>
-
-	<div class="modal fade" id="Web" tabindex="-1" role="dialog" aria-labelledby="myModalLabel3" aria-hidden="true">
-	  <div class="modal-dialog" role="document">
-	    <div class="modal-content">
-	      <div class="modal-header">
-	        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-	        <h4 class="modal-title" id="myModalLabel3">Fun Stuff</h4>
-	      </div>
-	      <div class="modal-body">
-	        <img class="img-responsive" src="images/nova.jpg" alt="fun">
-	        <p>and stuff...</p>
-	      </div>
-	      <div class="modal-footer">
-	        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-	      </div>
-	    </div>
-	  </div>
-	</div>
-
-
-
-
 </body>
 </html>
