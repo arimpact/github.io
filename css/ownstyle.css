@@ -10,21 +10,6 @@
   font-family: 'Lato', sans-serif;
 }
 
-.col-3 {
-  position: relative;
-  min-height: 1px;
-  padding: 0 15px 0 15px;
-  width: 25%;
-}
-
-.col-9 {
-  position: relative;
-  min-height: 1px;
-  padding: 0 15px 0 15px;
-  width: 75%;
-  float: left;
-}
-
 h1,
 .front {
   color: #747704;
