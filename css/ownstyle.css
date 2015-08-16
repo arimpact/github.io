@@ -9,45 +9,50 @@
 * {
   font-family: 'Lato', sans-serif;
 }
+
 .col-3 {
-  padding-right: 0px;
   position: relative;
   min-height: 1px;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding: 0 15px 0 15px;
   width: 25%;
-  float: left;
 }
+
 .col-9 {
-  padding-right: 0px;
   position: relative;
   min-height: 1px;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding: 0 15px 0 15px;
   width: 75%;
   float: left;
 }
+
 h1,
 .front {
   color: #747704;
 }
+
 footer {
   margin: 20px 0 0 0;
 }
+
 footer a {
   margin: 0 15px 0 0;
   float: right;
 }
+
 .text-thin {
   font-weight: 100;
 }
+
 .wrap {
   display: flex;
 }
+
 @media screen and (max-width: 767px) {
+
   h1 {
     font-size: 7vw;
   }
+
   .front {
     font-size: 4vw;
   }
